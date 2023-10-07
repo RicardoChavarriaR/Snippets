@@ -19,7 +19,7 @@
 	"Arduino":{
 		"prefix": "arduino",
 		"body": [
-			"#include <Arduino.h>\n",
+			"#include <Arduino.h>\n\n\n",
 			"void setup(){",
 			"${1:código}\n}\n",
 			"void loop(){",
