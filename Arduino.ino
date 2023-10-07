@@ -16,22 +16,62 @@
 	// 	"description": "Log output to console"
 	// }
 
+	"Arduino":{
+		"prefix": "arduino",
+		"body": [
+			"#include <Arduino.h>\n",
+			"void setup(){",
+			"${1:código}\n}\n",
+			"void loop(){",
+			"${2:código}\n}"
+		]
+	},
+
 //*********************************************************************** Pines ***************************************************************************
 		"pinMode":{
 			"prefix": "pinMode",
-			"body": "pinMode(${1:pin},${2:tipo});"
+			"body": "pinMode(${1:pin},${2:OUTPUT});"
 		},
 
 		"digitalWrite":{
 			"prefix":"digitalWrite",
-			"body": "digitalWrite(${1:pin},${2:tipo});"
+			"body": "digitalWrite(${1:pin},${2:HIGH});"
 		},
 
 //*********************************************************************** Otros ***************************************************************************	
 		"delay":{
 			"prefix":"delay",
 			"body": "delay(${1:tiempo});"
-		}
+		},
+
+//************************************************ Bucles ***************************************************
+
+	"while":{
+		"prefix": "While",
+		"body":[
+			"while(${1:Condicion}){",
+			"\t$2",
+			"}"
+		]
+	},
+
+	"do":{
+		"prefix": "Do",
+		"body":[
+			"do{",
+			"\t${2:Condición}\n",
+			"}while(${1:Condición});"
+		]
+	},
+
+	"for":{
+		"prefix": "For",
+		"body":[
+			"for(${1:Tamaño} ${2:i}=0; ${2:i}<${3:Contador}; ${2:i}++){",
+			"\t${4:Codigo}",
+			"}"
+		]
+	}
 }
 
 //Esto es una prueba
