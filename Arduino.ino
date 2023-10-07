@@ -67,7 +67,7 @@
 	"for":{
 		"prefix": "For",
 		"body":[
-			"for(${1:Tamaño} ${2:i}=0; ${2:i}<${3:Contador}; ${2:i}++){",
+			"for(${1:Tamaño} ${2:i}=0; ${2:i}<=${3:Contador}; ${2:i}++){",
 			"\t${4:Codigo}",
 			"}"
 		]
