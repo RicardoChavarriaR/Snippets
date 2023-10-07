@@ -21,9 +21,9 @@
 		"body": [
 			"#include <Arduino.h>\n\n\n",
 			"void setup(){",
-			"${1:código}\n}\n",
+			"$1\n}\n",
 			"void loop(){",
-			"${2:código}\n}"
+			"\n}"
 		]
 	},
 
@@ -38,11 +38,39 @@
 			"body": "digitalWrite(${1:pin},${2:HIGH});"
 		},
 
+		"analogWrite":{
+			"prefix":"analogWrite",
+			"body": "analogWrite(${1:variable},${2:PWM});"
+		},
+
 //*********************************************************************** Otros ***************************************************************************	
 		"delay":{
 			"prefix":"delay",
 			"body": "delay(${1:tiempo});"
 		},
+
+//*********************************************************************** Serial ***************************************************************************	
+
+		"SerialBegin":{
+			"prefix":"begin",
+			"body": "begin(${1:9600});"
+		},
+
+		"SerialPrint":{
+			"prefix":"print",
+			"body": "print(${1:Impresión});"
+		},
+
+		"SerialPrint":{
+			"prefix":"print",
+			"body": "print(${1:Impresión});"
+		},
+
+		"SerialPrintln":{
+			"prefix":"println",
+			"body": "println(${1:Impresión});"
+		},
+
 
 //************************************************ Bucles ***************************************************
 
