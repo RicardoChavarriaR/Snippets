@@ -17,7 +17,7 @@
 	// }
 
 	"Arduino":{
-		"prefix": "arduino",
+		"prefix": "inicio",
 		"body": [
 			"#include <Arduino.h>\n\n\n",
 			"void setup(){",
