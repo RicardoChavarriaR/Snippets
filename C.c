@@ -23,7 +23,7 @@
 			"#include <stdio.h>"
 			"$1\n"
 			"int main(){",
-			"\t${2:Código}",
+			"\t$2",
 			"\n",
 			"return 0;",
 			"}"
