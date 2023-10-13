@@ -17,11 +17,13 @@
 	// 	"description": "Log output to console"
 	// }
 //************************************************ Main ***************************************************
-	"main":{
-		"prefix": "main",
+	"inicio":{
+		"prefix": "inicio",
 		"body":[
-			"main(){",
-			"\t${1:Código}",
+			"#include <stdio.h>"
+			"$1\n"
+			"int main(){",
+			"\t${2:Código}",
 			"\n",
 			"return 0;",
 			"}"
