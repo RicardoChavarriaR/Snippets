@@ -21,7 +21,7 @@
 		"prefix": "inicio",
 		"body":[
 			"#include <stdio.h>"
-			"$1\n"
+			"\t$1\n"
 			"int main(){",
 			"\t$2",
 			"\n",
