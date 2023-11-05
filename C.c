@@ -1,7 +1,3 @@
-// Estos comandos van en archivo c.json
-
-
-
 {
 	// Place your snippets for c here. Each snippet is defined under a snippet name and has a prefix, body and 
 	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
@@ -16,7 +12,10 @@
 	// 	],
 	// 	"description": "Log output to console"
 	// }
-//************************************************ Main ***************************************************
+
+
+
+//************************************************ Inicio ***************************************************
 	"inicio":{
 		"prefix": "inicio",
 		"body":[
@@ -69,5 +68,12 @@
 			"\t${4:Codigo}",
 			"}"
 		]
+	},
+	
+	//************************************************ Buffer ***************************************************
+	"fflush":{
+		"prefix": "fflush",
+		"body": "fflush(stdin);"
 	}
+	
 }
